@@ -37,6 +37,7 @@ public class frmMain extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tbNavigator.setRollover(true);
 
@@ -64,6 +65,13 @@ public class frmMain extends javax.swing.JFrame {
         bntLast.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         tbNavigator.add(bntLast);
 
+        getContentPane().add(tbNavigator, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 966, 25));
+        tbNavigator.getAccessibleContext().setAccessibleName("");
+
+        jMenuBar1.setToolTipText("");
+        jMenuBar1.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jMenuBar1.setSelectionModel(null);
+
         jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
 
@@ -71,23 +79,6 @@ public class frmMain extends javax.swing.JFrame {
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(tbNavigator, javax.swing.GroupLayout.DEFAULT_SIZE, 966, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(tbNavigator, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 502, Short.MAX_VALUE))
-        );
-
-        tbNavigator.getAccessibleContext().setAccessibleName("");
-
-        pack();
     }// </editor-fold>//GEN-END:initComponents
 
     /**
